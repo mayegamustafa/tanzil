@@ -9,13 +9,13 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN pnpm install --no-frozen-lockfile
+RUN pnpm --dir /app install --no-frozen-lockfile
 
 # Build web app
-RUN pnpm --filter web build
+RUN pnpm --dir /app --filter web build
 
 # Expose port
 EXPOSE 3000
 
 # Start web app
-CMD ["pnpm", "start:web"]
+CMD ["pnpm", "--dir", "/app", "start:web"]
