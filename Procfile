@@ -1,1 +1,1 @@
-web: pnpm start:web
+web: pnpm --dir /app start:web

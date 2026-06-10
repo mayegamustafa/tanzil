@@ -18,4 +18,4 @@ RUN pnpm --filter web build
 EXPOSE 3000
 
 # Start web app
-CMD ["pnpm", "start:web"]
+CMD ["pnpm", "--dir", "/app", "start:web"]
