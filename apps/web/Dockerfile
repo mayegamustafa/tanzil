@@ -5,15 +5,8 @@ RUN npm install -g pnpm@latest
 
 WORKDIR /app
 
-# Copy root files
-COPY ../../pnpm-lock.yaml ./
-COPY ../../package.json ./
-COPY ../../pnpm-workspace.yaml ./
-COPY ../../.pnpmrc ./
-COPY ../../turbo.json ./
-
-# Copy all apps
-COPY ../../apps ./apps
+# Copy all files (Railway sets build context to repo root)
+COPY . .
 
 # Install dependencies
 RUN pnpm install --frozen-lockfile
