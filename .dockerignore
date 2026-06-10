@@ -1,0 +1,15 @@
+node_modules
+.git
+.github
+.next
+dist
+build
+.env
+.env.local
+.DS_Store
+*.log
+.turbo
+.nixpacks
+railway.json
+Dockerfile
+README.md
