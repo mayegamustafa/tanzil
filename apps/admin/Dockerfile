@@ -18,4 +18,4 @@ RUN pnpm --dir /app --filter admin build
 EXPOSE 3000
 
 # Start admin app
-CMD ["pnpm", "--dir", "/app", "start:admin"]
+CMD ["sh", "-c", "pnpm --dir /app start:admin"]
