@@ -1,7 +1,7 @@
 FROM node:20-alpine
 
-# Install pnpm
-RUN npm install -g pnpm@latest
+# Install pnpm 9 (compatible with Node 20)
+RUN npm install -g pnpm@9
 
 WORKDIR /app
 
