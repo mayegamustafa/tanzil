@@ -1,0 +1,15 @@
+providers:
+  - nodejs
+  - pnpm
+
+env:
+  NIXPACKS_NODE_VERSION: "20"
+
+phases:
+  install:
+    run: pnpm install --frozen-lockfile
+  build:
+    run: pnpm build:web
+  
+start:
+  run: pnpm start:web
