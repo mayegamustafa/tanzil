@@ -86,7 +86,6 @@ export default function Header({ settings, currentPath = "/" }: HeaderProps) {
               src="/logo.png"
               alt={settings.site_name}
               className="h-11 w-auto transition-all object-contain"
-              style={!scrolled ? { filter: "brightness(0) invert(1) drop-shadow(0 0 8px rgba(255,255,255,0.3))" } : undefined}
             />
           </Link>
 

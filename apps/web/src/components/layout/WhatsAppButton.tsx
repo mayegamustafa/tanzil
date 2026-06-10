@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { Phone } from "lucide-react";
 
 interface WhatsAppButtonProps {
   phone: string;
@@ -34,8 +35,8 @@ export default function WhatsAppButton({
       <span className="overflow-hidden max-w-0 group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap pl-0 group-hover:pl-4 text-sm font-medium">
         Chat on WhatsApp
       </span>
-      <div className="w-14 h-14 flex items-center justify-center shrink-0">
-        <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6 object-contain" />
+      <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0">
+        <Phone className="w-7 h-7" />
       </div>
     </a>
   );
