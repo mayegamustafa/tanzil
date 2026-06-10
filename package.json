@@ -14,7 +14,9 @@
     "type-check": "turbo run type-check",
     "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
     "build:web": "pnpm --filter web build",
+    "build:admin": "pnpm --filter admin build",
     "start:web": "pnpm --filter web start",
+    "start:admin": "pnpm --filter admin start",
     "start": "pnpm --filter web start"
   },
   "devDependencies": {

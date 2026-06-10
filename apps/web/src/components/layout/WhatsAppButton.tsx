@@ -1,5 +1,4 @@
 "use client";
-import { MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
 
 interface WhatsAppButtonProps {
@@ -36,7 +35,7 @@ export default function WhatsAppButton({
         Chat on WhatsApp
       </span>
       <div className="w-14 h-14 flex items-center justify-center shrink-0">
-        <MessageCircle className="w-6 h-6 fill-white" />
+        <img src="/whatsapp.png" alt="WhatsApp" className="w-6 h-6 object-contain" />
       </div>
     </a>
   );

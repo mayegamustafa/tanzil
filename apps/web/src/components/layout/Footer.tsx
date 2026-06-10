@@ -35,11 +35,8 @@ export default function Footer({ settings }: FooterProps) {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center border border-white/20">
-                <svg width="22" height="22" viewBox="0 0 32 32" fill="none">
-                  <path d="M16 3L4 10v12l12 7 12-7V10L16 3z" stroke="#C8A96B" strokeWidth="1.5"/>
-                  <circle cx="16" cy="16" r="4" fill="#C8A96B" opacity="0.6"/>
-                </svg>
+              <div className="w-14 h-14 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 flex-shrink-0">
+                <img src="/logo.png" alt={settings.site_name} className="h-10 w-auto object-contain" />
               </div>
               <div>
                 <p className="font-bold text-lg font-heading leading-none">{settings.site_name}</p>
